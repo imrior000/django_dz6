@@ -1,0 +1,9 @@
+{% extends 'myapp3/base.html' %}
+
+{% block content %}
+    {% for item in qwerty %}
+        <p>
+            <a href="{% url 'upload_image' item.id %}">{{ item.name }}</a>
+        </p>
+    {% endfor %}
+{% endblock %}
